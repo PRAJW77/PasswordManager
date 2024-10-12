@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mycontainer {
+    @apply container px-40 py-16 mx-auto;
+  }
+
+  .inputField {
+    @apply rounded-full bg-transparent px-5 relative outline-none text-white border border-green-700 w-full p-4 py-1;
+    background: transparent;
+    position: relative;
+    /* z-index: 2; */
+  }
+
+  .inputField::placeholder {
+    @apply text-white;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
