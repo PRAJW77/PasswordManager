@@ -3,8 +3,8 @@ import git from "../assets/icons/github.svg";
 
 const Navbar = () => {
   return (
-    <nav className="text-white bg-indigo-950">
-      <div className="mycontainer flex justify-between items-center py-5 h-14 ">
+    <nav className="text-white bg-indigo-950 md:mycontainer md:py-1">
+      <div className="mycontainer flex justify-between items-center px-4 py-5 h-14 ">
         <div className="logo font-bold text-2xl ">
           <span className="text-green-700">&lt;</span>
           Pass
@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
         </ul> */}
         <button
-          className="text-white my-5 rounded-3xl flex gap-2 justify-between text-center items-center border
+          className="text-white my-5 mx-2 rounded-3xl flex justify-between text-center items-center border
       hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] transition-all duration-300 ring-white ring-1 bg-black"
         >
           <img className="invert w-10 p-1" src={git} alt="github" />
